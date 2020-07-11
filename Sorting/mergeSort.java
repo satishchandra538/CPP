@@ -14,6 +14,10 @@ public class mergeSort {
             Sort(arr, f, m);
             Sort(arr, m + 1, l);
             merge(arr, f, m, l);
+            for(int i=0;i<arr.length;i++){
+                System.out.print(arr[i]+" ");
+            }
+            System.out.println();
         }
     }
 
@@ -50,7 +54,7 @@ public class mergeSort {
     }
 
     public static void main(String args[]) {
-        int sizeOfArray = 50, arr[] = new int[sizeOfArray];
+        int sizeOfArray = 6, arr[] = new int[sizeOfArray];
         Random random = new Random();
         for (int i = 0; i < sizeOfArray; i++) {
             arr[i] = random.nextInt(1000);
