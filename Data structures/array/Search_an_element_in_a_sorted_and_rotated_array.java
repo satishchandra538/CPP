@@ -24,13 +24,13 @@ public class Search_an_element_in_a_sorted_and_rotated_array extends rotate_arra
         int arr[] = new int[] { 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 0, 1, 2, 3 };
         int pivot = sira.pivot(arr);
         sira.print(arr);
-        System.out.println(pivot);
+        System.out.println("pivot = " + pivot);
         int num = 0;
         int index;
         if (num > arr[0])
             index = sira.BinarySearch(arr, num, 0, pivot);
         else
             index = sira.BinarySearch(arr, num, pivot + 1, arr.length - 1);
-        System.out.println(index);
+        System.out.println("index = " + index);
     }
 }

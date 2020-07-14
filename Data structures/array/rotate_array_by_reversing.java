@@ -9,9 +9,7 @@ public class rotate_array_by_reversing extends rotate_array {
 
     public void rotate(int arr[], int num) {
         reverse(arr, 0, num - 1);
-        print(arr);
         reverse(arr, num, arr.length - 1);
-        print(arr);
         reverse(arr, 0, arr.length - 1);
     }
 
